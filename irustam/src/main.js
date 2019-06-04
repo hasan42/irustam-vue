@@ -6,3 +6,8 @@ Vue.config.productionTip = false
 new Vue({
   render: h => h(App),
 }).$mount('#app')
+Vue.use({
+    install: function (Vue) {
+        Vue.prototype.$jQuery = require('jquery'); // you'll have this.$jQuery anywhere in your vue project
+    }
+})

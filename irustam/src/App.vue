@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="main">
     <Header />
     <Main />
     <Personal />
@@ -20,4 +20,6 @@
 </script>
 
 <style lang="scss">
+  @import './assets/css/normalize.css';
+  @import './assets/css/main.css';
 </style>
