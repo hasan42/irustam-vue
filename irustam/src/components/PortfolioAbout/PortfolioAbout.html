@@ -1,9 +1,9 @@
-﻿<div id="portfolioabout" class="portfolio-about" data-company="5th">
-    <div class="portfolio-about__image"><a href="http://5th.ru/" target="_blank"><img src="images/5th.png"></a></div>
+﻿<div id="portfolioabout" class="portfolio-about" data-company="info[0].tag" v-if="info[0]">
+    <div class="portfolio-about__image"><a href="info[0].link" target="_blank"><img src="info[0].image"></a></div>
     <div class="portolio-about__info">
-        <h3><a href="http://5th.ru/" target="_blank">Пятое измерение</a> <span>апрель 2011 &mdash; декабрь 2014</span></h3>
-        <p>Наполнение новых и поддержка текущих проектов.</p>
-        <p>Сайты гос.структур, частных компаний и пр.</p>
-        <p>Поддержка сайтов автодилеров по требованиям фед.импортера. Обновление акций, контентых страниц, новостей, модельного ряда и пр.</p>
+        <h3><a href="info[0].link" target="_blank">{{info[0].name}}</a> <span>{{info[0].start}} &mdash; {{info[0].finish}}</span></h3>
+        <div v-html="info[0].info">
+            {{info[0].info}}
+        </div>
     </div>
 </div>

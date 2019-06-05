@@ -1,3 +1,5 @@
 export default {
-    name: 'PortfolioAbout'
+    name: 'PortfolioAbout',
+    props: ['info'],
+    
 }
