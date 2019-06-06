@@ -1,9 +1,11 @@
 ﻿<div id="portfolionav" class="portfolio-nav">
     <div class="portfolio-nav__item"
-         @click='selectfn("all")'>Все</div>
+         :class="[ active == 'all' ? 'active' : '' ]"
+         @click="setActive('all');selectfn('all');">Все</div>
     <div v-for="company in companys"
          class="portfolio-nav__item"
-         @click="selectfn(company.tag)">
+         :class="[ active == company.tag ? 'active' : '' ]"
+         @click="setActive(company.tag);selectfn(company.tag);">
         {{company.name}}
     </div>
 </div>
