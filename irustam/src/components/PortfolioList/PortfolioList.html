@@ -1,3 +1,10 @@
 <div id="portfoliolist" class="portfolio-list">
-    <PortfolioItem />
+    <PortfolioItem v-for="project in projects"
+                   :company="project.company"
+                   :name="project.name"
+                   :link="project.link"
+                   :image="project.image"
+                   :design="project.design"
+                   :frontend="project.frontend"
+                   :support="project.support" />
 </div>

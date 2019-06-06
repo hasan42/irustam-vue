@@ -1,5 +1,7 @@
-<div id="portfolioitem" class="portfolio-item" data-company="5th">
-    <div class="portfolio-item__frontend"></div>
-    <div class="portfolio-item__image"><a href="http://spik.pro/" target="_blank"><img src="images/spik.jpg"></a></div>
-    <div class="portfolio-item__name"><a href="http://spik.pro/" target="_blank">«ÑÏÈÊ»</a></div>
+<div id="portfolioitem" class="portfolio-item">
+    <div class="portfolio-item__design" v-if="design == 1"></div>
+    <div class="portfolio-item__support" v-if="support == 1"></div>
+    <div class="portfolio-item__frontend" v-if="frontend == 1"></div>
+    <div class="portfolio-item__image"><a :href="link" target="_blank"><img :src="image"></a></div>
+    <div class="portfolio-item__name"><a :href="link" target="_blank">{{name}}</a></div>
 </div>

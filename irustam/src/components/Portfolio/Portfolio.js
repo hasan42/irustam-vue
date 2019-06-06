@@ -15,17 +15,31 @@ export default {
     data() {
         return {
             company: '',
-            active: ''
+            active: '',
+            allproject: '',
+            project: ''
         };
     },
     mounted: function () {
         axios.get('company.json')
             .then(response => (this.company = response.data))
             .catch(error => console.log(error));
+        axios.get('portfolio.json')
+            .then(response => {
+                this.allproject = response.data;
+                this.project = this.allproject;
+            })
+            .catch(error => console.log(error));
     },
     methods: {
         select: function (tag) {
             this.active = this.company.filter(d => d.tag === tag);
+            if (tag != 'all') {
+                this.project = this.allproject.filter(d => d.company === tag);
+            } else {
+                this.project = this.allproject;
+            }
+            
 
             /*axios.get('company.json')
                 .then(response => {

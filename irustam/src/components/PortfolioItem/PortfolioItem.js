@@ -1,3 +1,4 @@
 export default {
-    name: 'PortfolioItem'
+    name: 'PortfolioItem',
+    props: ['company', 'name', 'link', 'image', 'design', 'support', 'frontend'],
 }

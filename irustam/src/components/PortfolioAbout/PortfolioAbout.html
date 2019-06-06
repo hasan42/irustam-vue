@@ -1,7 +1,7 @@
-﻿<div id="portfolioabout" class="portfolio-about" data-company="info[0].tag" v-if="info[0]">
-    <div class="portfolio-about__image"><a href="info[0].link" target="_blank"><img src="info[0].image"></a></div>
+﻿<div id="portfolioabout" class="portfolio-about" v-if="info[0]">
+    <div class="portfolio-about__image"><a :href="info[0].link" target="_blank"><img :src="info[0].image"></a></div>
     <div class="portolio-about__info">
-        <h3><a href="info[0].link" target="_blank">{{info[0].name}}</a> <span>{{info[0].start}} &mdash; {{info[0].finish}}</span></h3>
+        <h3><a :href="info[0].link" target="_blank">{{info[0].name}}</a> <span>{{info[0].start}} &mdash; {{info[0].finish}}</span></h3>
         <div v-html="info[0].info">
             {{info[0].info}}
         </div>
