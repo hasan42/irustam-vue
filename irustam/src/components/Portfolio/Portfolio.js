@@ -17,7 +17,8 @@ export default {
             company: '',
             active: '',
             allproject: '',
-            project: ''
+            project: '',
+            count: []
         };
     },
     mounted: function () {
@@ -28,6 +29,7 @@ export default {
             .then(response => {
                 this.allproject = response.data;
                 this.project = this.allproject;
+                this.calcCount();
             })
             .catch(error => console.log(error));
     },
@@ -36,11 +38,11 @@ export default {
             this.active = this.company.filter(d => d.tag === tag);
             if (tag != 'all') {
                 this.project = this.allproject.filter(d => d.company === tag);
+                this.calcCount();
             } else {
                 this.project = this.allproject;
+                this.calcCount();
             }
-            
-
             /*axios.get('company.json')
                 .then(response => {
                     (this.active = response.data.filter(d => d.tag === tag));
@@ -48,6 +50,13 @@ export default {
                 })
                 .catch(error => console.log(error));
             console.log(tag);*/
+        },
+
+        calcCount: function () {
+            let countDesign = this.project.filter(d => d.design === '1').length;
+            let countFrontend = this.project.filter(d => d.frontend === '1').length;
+            let countSupport = this.project.filter(d => d.support === '1').length;
+            return this.count = [countDesign, countFrontend, countSupport];
         }
     }
 }

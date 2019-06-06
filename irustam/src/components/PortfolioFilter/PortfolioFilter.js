@@ -1,3 +1,4 @@
 export default {
-    name: 'PortfolioFilter'
+    name: 'PortfolioFilter',
+    props: ['count'],
 }
