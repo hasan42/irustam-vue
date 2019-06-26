@@ -1,0 +1,75 @@
+.form-line {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+}
+
+.form-line input[type="text"],
+.form-line textarea {
+    padding: 20px 10px 5px 0px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #a9a9a9;
+    resize: none;
+}
+
+.form-line input[type="text"] + label,
+.form-line textarea + label {
+    position: absolute;
+    left: 0px;
+    top: 16px;
+    transition: 0.2s ease all;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.form-line input[type="text"]:focus + label,
+.form-line textarea:focus + label,
+.form-line input[type="text"]:valid + label,
+.form-line textarea:valid + label {
+    top: 0px;
+    font-size: 14px;
+}
+
+.form-line input[type="text"]:focus,
+.form-line textarea:focus,
+.form-line input[type="text"]:valid,
+.form-line textarea:valid {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.form-line input[type="submit"] {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 0;
+    color: #ffffff;
+    background-color: #333333;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s 0s, color 0.2s 0s;
+    border-radius: 3px;
+}
+
+.form-line input[type="submit"]:hover,
+.form-line input[type="submit"]:focus,
+.form-line input[type="submit"]:active {
+    background-color: #a9a9a9;
+    color: #333333;
+    transition: background-color 0.2s 0s, color 0.2s 0s;
+}
+
+.form-line input[type="submit"]:disabled {
+    background-color: #f2f2f2;
+    color: #333333;
+    transition: background-color 0.2s 0s, color 0.2s 0s;
+    cursor: default;
+}
+
+.form-line.border {
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 2px solid #a9a9a9;
+}
+

@@ -1,5 +1,6 @@
 <div id="portfoliolist" class="portfolio-list">
     <PortfolioItem v-for="project in projects"
+                   :key="project.id"
                    :company="project.company"
                    :name="project.name"
                    :link="project.link"

@@ -4,6 +4,9 @@
     <Main />
     <Personal />
     <Portfolio />
+    <Modal>
+      <Feedback />
+    </Modal>
   </div>
 </template>
 
@@ -12,11 +15,13 @@
   import Main from './components/Main/Main.vue'
   import Personal from './components/Personal/Personal.vue'
   import Portfolio from './components/Portfolio/Portfolio.vue'
+  import Modal from './components/Modal/Modal.vue'
+  import Feedback from './components/Feedback/Feedback.vue'
 
   export default {
   name: 'app',
   components: {
-  Header, Main, Personal, Portfolio
+  Header, Main, Personal, Portfolio, Modal, Feedback
   }
   }
 </script>
