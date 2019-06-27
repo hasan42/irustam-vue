@@ -1,5 +1,5 @@
-<div class="modal">
-    <div class="modal-close">
+<div class="modal" :class="[ visible ? 'modal_active' : '' ]">
+    <div class="modal-close" @click="close()">
         <div class="modal-close__bit_0"></div>
         <div class="modal-close__bit_1"></div>
     </div>

@@ -5,10 +5,11 @@
     "\\src\\assets",
     "\\src\\assets\\css",
     "\\src\\components",
-    "\\src\\components\\Main",
-    "\\src\\components\\modal",
-    "\\src\\components\\PortfolioItem"
+    "\\src\\components\\Header",
+    "\\src\\components\\Modal",
+    "\\src\\components\\Portfolio",
+    "\\src\\components\\PortfolioNav"
   ],
-  "SelectedNode": "\\src\\components\\modal\\Modal.scss",
+  "SelectedNode": "\\src\\components\\Modal\\Modal.js",
   "PreviewInSolutionExplorer": false
 }

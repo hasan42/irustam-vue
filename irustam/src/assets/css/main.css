@@ -77,7 +77,9 @@ h3 {
 /* -------- /ico -----------*/
 /* -------- popup -----------*/
 
-
+.modal-open {
+    overflow:hidden;
+}
 .form-ok {
     padding-top: 50px;
     background-position: left top;
