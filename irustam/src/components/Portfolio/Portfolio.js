@@ -22,10 +22,10 @@ export default {
         };
     },
     mounted: function () {
-        axios.get('company.json')
+        axios.get('company.php')
             .then(response => (this.company = response.data))
             .catch(error => console.log(error));
-        axios.get('portfolio.json')
+        axios.get('portfolio.php')
             .then(response => {
                 this.allproject = response.data;
                 this.project = this.allproject;

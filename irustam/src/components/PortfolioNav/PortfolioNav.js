@@ -9,7 +9,6 @@ export default {
     methods: {
         setActive: function (tag) {
             this.active = tag;
-            console.log(this.active)
         }
     }
 }

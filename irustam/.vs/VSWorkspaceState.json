@@ -1,15 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\dist",
+    "\\public",
     "\\src",
-    "\\src\\assets",
     "\\src\\assets\\css",
     "\\src\\components",
-    "\\src\\components\\Header",
-    "\\src\\components\\Modal",
-    "\\src\\components\\Portfolio",
-    "\\src\\components\\PortfolioNav"
+    "\\src\\components\\Portfolio"
   ],
-  "SelectedNode": "\\src\\components\\Modal\\Modal.js",
+  "SelectedNode": "\\public\\index.html",
   "PreviewInSolutionExplorer": false
 }
