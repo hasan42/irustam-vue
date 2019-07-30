@@ -4,10 +4,12 @@
     "\\dist",
     "\\public",
     "\\src",
-    "\\src\\assets\\css",
     "\\src\\components",
-    "\\src\\components\\Portfolio"
+    "\\src\\components\\Personal",
+    "\\src\\components\\Portfolio",
+    "\\src\\components\\PortfolioAbout",
+    "\\src\\components\\PortfolioItem"
   ],
-  "SelectedNode": "\\public\\index.html",
+  "SelectedNode": "\\src\\components\\Portfolio\\Portfolio.js",
   "PreviewInSolutionExplorer": false
 }

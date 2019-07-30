@@ -2,6 +2,12 @@
     <div class="portfolio-item__design" v-if="design == 1"></div>
     <div class="portfolio-item__support" v-if="support == 1"></div>
     <div class="portfolio-item__frontend" v-if="frontend == 1"></div>
-    <div class="portfolio-item__image"><a :href="link" target="_blank"><img :src="[image != '' ? image : 'images/no-photo.png']"></a></div>
-    <div class="portfolio-item__name"><a :href="link" target="_blank">{{name}}</a></div>
+    <div class="portfolio-item__image">
+        <a v-if="link != ''" :href="link" target="_blank"><img :src="[image != '' ? image : 'images/no-photo.png']"></a>
+        <a v-else><img :src="[image != '' ? image : 'images/no-photo.png']"></a>
+    </div>
+    <div class="portfolio-item__name">
+        <a v-if="link != ''" :href="link" target="_blank">{{name}}</a>
+        <a v-else>{{name}}</a>
+    </div>
 </div>
